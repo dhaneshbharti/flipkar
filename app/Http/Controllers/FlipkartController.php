@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Roles;
 use App\Models\Workers;
+use App\Models\Worker;
 use App\Models\Flipkart;
 
 
@@ -28,5 +29,10 @@ class FlipkartController extends Controller
         return response()->json(['data' => Workers::where('r_id', $id)->get()], 200);
 
     }
+    public function result(){
 
+        return worker::all();
+        return response()->json(['data' => $data], 200);
+
+    }
 }

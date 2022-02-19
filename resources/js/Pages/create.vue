@@ -1,6 +1,6 @@
 <template>
  <div class="p-2 bg-gray">
-        <h3 class="text-blue-500 text-center">Dhanesh groccery system</h3>
+        <h3 class="text-blue-500 text-center">Employee management system</h3>
         <div class="p-5">
           
                 <div class="w-full">

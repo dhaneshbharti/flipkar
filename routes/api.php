@@ -24,4 +24,6 @@ Route::get('/dhanesh',[FlipkartController::class,'role']);
 Route::get('/dhaneshji/{id}',[FlipkartController::class,'worker']);
 Route::post('/product/create',[FlipkartController::class,'create']);
 
+Route::get('/workers/result',[\App\Http\Controllers\FlipkartController::class,'result']);
+
 //ye api hain jo data ko fetch krti hai UI ke liye right front end me

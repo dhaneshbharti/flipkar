@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use App\Models\Worker;
 
 
 class HomeController extends Controller
@@ -13,6 +14,9 @@ class HomeController extends Controller
          return Inertia::render('create');
      }
      public function result(){
-        return Inertia::render('result');
+
+        return worker::all();
+        // return response()->json(['data' => $data], 200);
+
     }
 }
